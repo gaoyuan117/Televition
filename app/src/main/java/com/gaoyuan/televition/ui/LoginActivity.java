@@ -123,11 +123,11 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
                     protected void onHandleSuccess(LoginBean loginBean) {
                         SharedPreferencesUtil.getInstance().putString("token", loginBean.getToken());
                         SharedPreferencesUtil.getInstance().putString("phone", loginBean.getNickname());
+                        SharedPreferencesUtil.getInstance().putString("id", loginBean.getUid()+"");
                         App.phone = loginBean.getNickname();
                         App.token = loginBean.getToken();
-
+                        App.token = loginBean.getUid()+"";
                         startActivity(new Intent(LoginActivity.this, MainActivity.class));
-
                         finish();
                     }
                 });

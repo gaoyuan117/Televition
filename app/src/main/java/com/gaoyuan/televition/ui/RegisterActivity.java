@@ -158,11 +158,11 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
                     protected void onHandleSuccess(LoginBean loginBean) {
                         SharedPreferencesUtil.getInstance().putString("token", loginBean.getToken());
                         SharedPreferencesUtil.getInstance().putString("phone", loginBean.getNickname());
+                        SharedPreferencesUtil.getInstance().putString("id", loginBean.getUid()+"");
                         App.phone = loginBean.getNickname();
                         App.token = loginBean.getToken();
-
-                        startActivity(new Intent(RegisterActivity.this,MainActivity.class));
-
+                        App.token = loginBean.getUid()+"";
+                        startActivity(new Intent(RegisterActivity.this, MainActivity.class));
                         finish();
                     }
                 });

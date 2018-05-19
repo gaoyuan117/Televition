@@ -13,7 +13,7 @@ import java.util.List;
 public class App extends Application{
 
     private static App instance;
-    public static String token,phone;
+    public static String token,phone,id;
     public static List<String> list = new ArrayList<>();
 
     @Override

@@ -38,9 +38,9 @@ public interface Api {
     Observable<HttpResult<LoginBean>> protocol(@Field("mobile") String mobile,
                                             @Field("password") String password);
 
- //解析列表
+     //解析列表
     @FormUrlEncoded
-    @POST("api/user/getUserInfo")
+    @POST("/api/user/getUserInfo")
     Observable<HttpResult<LoginBean>> getUserInfo(@Field("token") String mobile);
 
 
