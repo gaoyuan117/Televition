@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="6dp"
+        android:layout_gravity="center"
+        android:id="@+id/img_logo"
+        android:layout_width="50dp"
+        android:scaleType="centerCrop"
+        android:layout_height="50dp"
+        android:src="@mipmap/aiqiyi" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="6dp"
+        android:textColor="#000"
+        android:text="爱奇艺" />
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:paddingTop="20dp"
+        android:id="@+id/ll_information"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:background="@mipmap/ic_mine_background"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <TextView
+                android:id="@+id/toolbar_titlee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="个人中心"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </android.support.v7.widget.Toolbar>
+
+        <include layout="@layout/view_info_detail_data" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:divider="@drawable/line"
+            android:dividerPadding="2dp"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+            <com.gaoyuan.televition.LineControlView
+                android:id="@+id/qrcode_mine"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@color/white"
+                app:canNavition="false"
+                app:iconRess="@mipmap/ic_qrcode"
+                app:titlee="二维码分享" />
+
+            <com.gaoyuan.televition.LineControlView
+                android:visibility="gone"
+                android:id="@+id/wallet_mine"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@color/white"
+                app:canNavition="false"
+                app:iconRess="@mipmap/ic_gold"
+                app:titlee="我的钱包" />
+
+            <com.gaoyuan.televition.LineControlView
+                android:id="@+id/vip_mine"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@color/white"
+                app:canNavition="false"
+                app:iconRess="@mipmap/ic_vip"
+                app:titlee="我的会员" />
+
+            <com.gaoyuan.televition.LineControlView
+                android:visibility="gone"
+                android:id="@+id/gotmony_mine"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@color/white"
+                app:canNavition="false"
+                app:iconRess="@mipmap/ic_gotmoney"
+                app:titlee="我的收益" />
+
+            <com.gaoyuan.televition.LineControlView
+                android:id="@+id/uimodule_item_main_list_tv"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@color/white"
+                app:canNavition="false"
+                app:iconRess="@mipmap/ic_setting"
+                app:titlee="使用说明" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

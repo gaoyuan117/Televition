@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <declare-styleable name="LineView" >
+        <!-- 名称 -->
+        <attr name="titlee" format="string"/>
+        <!-- 内容或当前状态 -->
+        <attr name="contentt" format="string"/>
+        <!-- 是否可以跳转 -->
+        <attr name="canNavition" format="boolean"/>
+        <!-- 是否是开关 -->
+        <attr name="openSwitchh" format="boolean"/>
+        <!-- 最大行数 -->
+        <attr name="maxLengthh" format="integer"/>
+        <!-- 图标 -->
+        <attr name="iconRess" format="reference"/>
+        <attr name="hasContentIconn" format="boolean"/>
+    </declare-styleable>
+
+
+
+</resources>

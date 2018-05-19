@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.gaoyuan.televition.MainActivity">
+
+    <LinearLayout
+        android:paddingTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_color"
+        android:orientation="vertical"
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp">
+
+        <com.youth.banner.Banner
+
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            app:image_scale_type="center_crop"
+            app:indicator_height="8dp"
+            app:indicator_margin="6dp"
+            app:indicator_width="8dp" />
+
+        <TextView
+            android:id="@+id/tv_notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/slideshowView"
+            android:drawableLeft="@mipmap/gonggao"
+            android:drawablePadding="10dp"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:singleLine="true"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#999999"
+        android:horizontalSpacing="0.5dp"
+        android:numColumns="3"
+        android:paddingBottom="0.5dp"
+        android:verticalSpacing="0.5dp" />
+
+</LinearLayout>
